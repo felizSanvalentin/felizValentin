@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="carta.css" />
+    <link rel="icon" href="./src/corazon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>Feliz san valentin</header>
+    <hr />
+    <div class="carta-container">
+      <p class="carta">
+        Mi vida, en esta fecha en la cual se es lo más romántico posible y se
+        demuestra todo aquello que amas al otro por medio de palabras, detalles
+        y caricias, quiero que te sientas a gusto, que te des cuenta que te amo
+        mucho más allá de lo que mis palabras lo dicen, porque cada beso, cada
+        caricia, cada atención e intensidad que tengo contigo, soy yo amándote,
+        porque así siento que te demuestro lo mucho que te amo, siendo tu
+        compañera en todo lo que necesites, apoyándote hasta en lo más mínimo, y
+        aconsejándote en lo que no estoy tan de acuerdo pero estando ahí
+        contigo, pues mientras Dios no lo permita y yo esté en tu vida, tal vez
+        te faltará paciencia pero amor y apoyo de mi parte, no, porque aquí
+        estoy para ti mi gordo, para escucharte, abrazarte, pelearte, amarte y
+        defenderte, porque contigo soy la persona más vulnerable y sensible
+        posible; descubrí lo que era extrañar a alguien y el no tener miedo a
+        demostrarlo, porque el ser lo más humano posible con la persona que
+        amas, es aquello que nos hace sentir especiales, y tú mi vida eres
+        especial y mereces muchísimas cosas buenas e inclusive mejores que yo,
+        pero olvídate que voy a dejar de otra persona ocupe mi lugar, pues seré
+        mejor para ti; cambio lo malo para poder unirnos y tener una relación en
+        la cual ambos nos sentamos felices, satisfechos, agradecidos, y si es
+        verdad, en diferentes ocasiones me vuelvo loquita y me dan mis ataques,
+        pero eres tú quien sabe cómo manejarlos y calmarnos, el cómo terminamos
+        abrazándonos y riéndonos, es algo que me hace sentir tan en paz, pues
+        cada que estoy contigo, me siento yo, sin tener que tapar nada, con
+        millones de risas, y enojos pero siendo feliz. Y eso es lo que me hace
+        dar cuenta de que eres tú eres hombre el cual Dios me mandó, para yo
+        poder tener seguridad y certeza de que si hay dos personas luchando por
+        algo en concreto y juntos, el nos lo hará posible, así como cuando
+        íbamos a misa y juntos pedíamos por lo mismo, nuestra relación, y estoy
+        tan pero tan agradecida de lo que llevamos, porque no somos los mismos q
+        cuando nos conocimos, hemos cambiado y para bien, porque por medio del
+        amor y con una razón, es más fácil, porque si se trata de cambiar por
+        alguien que amas, y deseas tener a tu lado, no se siente como
+        sacrificio, si no algo natural, que ni siquiera te diste cuenta, en qué
+        momento pasó, y aunque nuestra relación como muchas veces la llamamos es
+        un poco terraneitor, porque siempre estamos de aquí pa allá y de allá pa
+        acá haciendo mil cosas, mil planes, acompañados de muchas risas y de
+        llantos, en medio de todo, siempre se siente La Paz, aquella paz que
+        podemos encontrar en los brazos del otro, pues cada que nos abrazamos
+        sabemos que estamos en quien podemos confiar y que salga nuestra parte
+        más vulnerable, pues a el lado del otro, no seremos juzgados, al
+        contrario, amaremos más eso del otro, y es aquello lo que nos define
+        como relación, sin importar que o porque, siempre estamos ahí para el
+        otro. Gordito para finalizar, espero que te esté gustado cada uno de los
+        detalles que te preparé el día de hoy, pues realmente quería hacerlo
+        especial para ti y que sea un día que quede guardado en tu memoria; no
+        sé qué estará pasando en estos momentos, que estaremos haciendo o si ese
+        día me dio la chiripiorca y dicutimos, si es así, discúlpame, créeme que
+        quiero que este día sea realmente inolvidable para ti y que sea tu
+        primer 14 de febrero mágico. Te amo muchimo mi pedacito de cielo, con
+        cada estrella de la galaxia. Feliz san valentine
+      </p>
+    </div>
+    <script>
+      function createHeart() {
+        const heart = document.createElement("div");
+        heart.classList.add("heart");
+        heart.innerHTML = "❤️"; // También puedes usar otro emoji o SVG
+
+        document.body.appendChild(heart);
+
+        // Posición aleatoria en la parte superior
+        const startPos = Math.random() * window.innerWidth;
+        heart.style.left = `${startPos}px`;
+
+        // Tamaño aleatorio
+        const size = Math.random() * 30 + 20; // Entre 10px y 30px
+        heart.style.fontSize = `${size}px`;
+
+        // Duración de la animación
+        const duration = Math.random() * 3 + 2; // Entre 2s y 5s
+        heart.style.animationDuration = `${duration}s`;
+
+        // Eliminar el corazón cuando termine la animación
+        setTimeout(() => {
+          heart.remove();
+        }, duration * 1000);
+      }
+
+      // Crear corazones cada 300ms
+      setInterval(createHeart, 300);
+    </script>
+  </body>
+</html>
