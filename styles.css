@@ -63,3 +63,10 @@ a {
   color: white;
   background-color: rgb(0, 0, 0);
 }
+.video-container video {
+  width: auto;
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  
+}
